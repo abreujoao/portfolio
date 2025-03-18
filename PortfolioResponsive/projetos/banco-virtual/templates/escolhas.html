@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Escolhas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo, {{ session['username'] }}!</h1>
+        <h2>Escolha uma opção:</h2>
+        <ul class="menu">
+            <li><a class="btn" href="{{ url_for('salario') }}">Registrar Salário</a></li>
+            <li><a class="btn" href="{{ url_for('conta_corrente_view') }}">Conta Corrente</a></li>
+            <li><a class="btn" href="{{ url_for('conta_poupanca_view') }}">Conta Poupança</a></li>
+        </ul>
+        <center><a class="btn" href="{{ url_for('logout') }}">Sair</a></center>
+    </div>
+</body>
+</html> 

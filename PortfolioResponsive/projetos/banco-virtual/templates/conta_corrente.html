@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Conta Corrente</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Conta Corrente</h2>
+        <p>Saldo: R${{ conta.saldo }}</p>
+        <form action="{{ url_for('conta_corrente_view') }}" method="POST">
+            <label for="valor">Valor:</label>
+            <input type="number" name="valor" required>
+            <select name="tipo">
+                <option value="deposito">Depósito</option>
+                <option value="saque">Saque</option>
+            </select>
+            <button type="submit">Confirmar</button>
+        </form>
+        <h3>Transações</h3>
+        <ul>
+            {% for transacao in conta.transacoes %}
+                <li>{{ transacao }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - João Abreu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">João Paulo Abreu</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sobre.html" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projetos.html" class="nav__link active-link">Projetos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contato.html" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Projetos -->
+        <section class="projetos section" id="projetos">
+            <h2 class="section__title">Meus Projetos</h2>
+            <div class="projetos__container container grid">
+                <article class="projeto__card">
+                    <div class="projeto__content">
+                        <h3 class="projeto__title">Banco Virtual</h3>
+                        <p class="projeto__description">
+                            Um sistema bancário virtual desenvolvido com Flask que permite:
+                        </p>
+                        <ul class="projeto__features">
+                            <li>Login e registro de usuários</li>
+                            <li>Conta corrente com depósitos e saques</li>
+                            <li>Conta poupança com depósitos e saques</li>
+                            <li>Registro de salário</li>
+                            <li>Histórico de transações</li>
+                        </ul>
+                        <div class="projeto__buttons">
+                            <a href="projetos/banco-virtual/banco-virtual.html" class="button button--primary" target="_blank">
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/seu-usuario/banco-virtual" class="button button--secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projeto__card">
+                    <div class="projeto__content">
+                        <h3 class="projeto__title">Relógio Digital</h3>
+                        <p class="projeto__description">
+                            Um relógio digital moderno desenvolvido com tecnologias web que oferece:
+                        </p>
+                        <ul class="projeto__features">
+                            <li>Design moderno com cores suaves</li>
+                            <li>Atualização em tempo real dos segundos</li>
+                            <li>Interface responsiva para todos dispositivos</li>
+                            <li>Animações suaves de transição</li>
+                            <li>Desenvolvido com HTML, CSS e JavaScript puro</li>
+                        </ul>
+                        <div class="projeto__buttons">
+                            <a href="projetos/relogio-digital/relogio-digital.html" class="button button--primary" target="_blank">
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/seu-usuario/relogio-digital" class="button button--secondary" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">&#169; 2024 João Abreu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scroll-up" id="scroll-up">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+</html> 

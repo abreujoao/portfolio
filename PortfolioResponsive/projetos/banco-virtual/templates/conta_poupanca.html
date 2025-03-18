@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conta Poupança</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Conta Poupança</h2>
+        <p>Saldo: R${{ conta.saldo }}</p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form action="{{ url_for('conta_poupanca_view') }}" method="POST">
+            <label for="valor">Valor para depósito:</label>
+            <input type="number" name="valor" required>
+            <input type="hidden" name="tipo" value="deposito">
+            <button type="submit">Depositar</button>
+        </form>
+
+        <form action="{{ url_for('conta_poupanca_view') }}" method="POST">
+            <label for="valor">Valor para saque:</label>
+            <input type="number" name="valor" required>
+            <input type="hidden" name="tipo" value="saque">
+            <button type="submit">Sacar</button>
+        </form>
+
+        <h3>Transações</h3>
+        <ul>
+            {% for transacao in conta.transacoes %}
+                <li>{{ transacao }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html> 

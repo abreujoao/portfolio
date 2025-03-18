@@ -1,0 +1,155 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Largura máxima do container */
+    margin: 30px auto; /* Margem automática para centralização */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #fff; /* Cor de fundo do container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilos dos Títulos */
+h1, h2, h3 {
+    color: #333; /* Cor dos títulos */
+}
+
+/* Menu e Botões */
+.menu, .form-group {
+    display: flex; /* Flexbox para layout */
+    flex-direction: column; /* Direção vertical */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+.btn, button {
+    padding: 10px; /* Preenchimento interno */
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    text-align: center; /* Centraliza texto */
+    text-decoration: none; /* Remove sublinhado */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda cursor ao passar mouse */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn:hover, button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar mouse */
+}
+
+/* Alertas */
+.alert {
+    padding: 10px; /* Preenchimento interno para alertas */
+    margin: 10px 0; /* Margem vertical */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.alert.success {
+    background-color: #d4edda; /* Fundo verde claro */
+    color: #155724; /* Cor do texto verde escuro */
+}
+
+.alert.error {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: #721c24; /* Cor do texto vermelho escuro */
+}
+
+/* Estilos para Inputs */
+input[type="number"], select {
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+label {
+    display: block; /* Faz com que o label ocupe toda a linha */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+    font-weight: bold; /* Destaque do texto do label */
+}
+
+/* Estilos dos Botões */
+button {
+    padding: 10px 15px; /* Preenchimento interno para botões */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Alertas de Sucesso e Erro */
+.success {
+    background-color: #d4edda; /* Fundo verde claro */
+    color: #155724; /* Cor do texto verde escuro */
+}
+
+.error {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: #721c24; /* Cor do texto vermelho escuro */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Largura máxima do container */
+    margin: 30px auto; /* Margem automática para centralização */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #fff; /* Cor de fundo do container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.menu {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Adiciona margem acima e abaixo da lista */
+}
+
+.menu li {
+    margin: 10px 0; /* Espaço entre os itens da lista */
+}
+
+.btn {
+    display: inline-block; /* Exibe como bloco inline */
+    padding: 10px 15px; /* Preenchimento interno */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.btn:hover {
+    background-color: #a04545; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.alert {
+    padding: 10px; /* Preenchimento interno para alertas */
+    margin-bottom: 15px; /* Espaço abaixo dos alertas */
+    border-radius: 4px; /* Bordas arredondadas para alertas */
+}
+
+.success {
+    background-color: #d4edda; /* Fundo verde claro */
+    color: #155724; /* Cor do texto verde escuro */
+}
+
+.error {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: #721c24; /* Cor do texto vermelho escuro */
+} 
