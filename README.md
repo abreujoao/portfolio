@@ -51,7 +51,6 @@ O site é totalmente responsivo e se adapta aos seguintes dispositivos:
 
 ## 🔗 Links
 
-- [LinkedIn](https://linkedin.com/in/seu-perfil)
 - [GitHub](https://github.com/seu-usuario)
 - [WhatsApp](https://wa.me/5547992287191)
 - [Email](mailto:joaopauloabreu1306@gmail.com)
@@ -64,7 +63,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 João Paulo Abreu
 - Analista de Suporte
-- Especialista em Banco de Dados
+- Banco de Dados
 - Desenvolvedor Web em formação
 
 ---
