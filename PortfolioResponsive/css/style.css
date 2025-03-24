@@ -896,10 +896,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .nav__list {
-        display: none;
-    }
-
     .nav__menu {
         position: fixed;
         top: -100%;

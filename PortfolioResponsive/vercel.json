@@ -29,8 +29,17 @@
       }
     },
     {
+      "src": "/projetos.html",
+      "dest": "/projetos.html"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ]
+  ],
+  "outputDirectory": "."
 } 
