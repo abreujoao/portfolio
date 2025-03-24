@@ -65,6 +65,15 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
+// Adicionar evento de clique para voltar ao topo
+document.getElementById('scroll-up').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 /*==================== THEME TOGGLE ====================*/
 const themeToggle = document.getElementById('theme-toggle');
 const icon = themeToggle.querySelector('i');
